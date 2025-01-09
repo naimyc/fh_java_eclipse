@@ -1,17 +1,18 @@
 package com.main;
 
+import java.util.Scanner;
+
 import com.classes.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Auto a = new Auto();
-
-		a.setMarke("Audi");
-		a.setModell("A11.0");
-		a.setBaujahr(1999);
-		a.setGeschwindigkeit(8);
-
-		a.ausgabe();
+		Quadrat_1 q = new Quadrat_1(4);
+		Kreis k = new Kreis(4);
+		
+		if(k instanceof Flaeche){
+			System.out.println("as");
+		}
+		System.out.println(k instanceof Flaeche);
 	}
 }
