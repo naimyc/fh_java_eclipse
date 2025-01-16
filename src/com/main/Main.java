@@ -1,18 +1,22 @@
 package com.main;
 
-import java.util.Scanner;
-
-import com.classes.*;
-
+import com.classes.Character;
 public class Main {
 
 	public static void main(String[] args) {
-		Quadrat_1 q = new Quadrat_1(4);
-		Kreis k = new Kreis(4);
+		Character z = new Character();
+		char[] a = {'a', 'c', 'h'};
 		
-		if(k instanceof Flaeche){
-			System.out.println("as");
+		
+		char zeichen;
+		try {
+			zeichen = (char) z.zeichen(a);
+			System.out.println("Character: " + zeichen);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		System.out.println(k instanceof Flaeche);
+		
+		
 	}
 }
