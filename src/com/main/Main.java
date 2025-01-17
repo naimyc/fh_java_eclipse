@@ -1,30 +1,25 @@
 package com.main;
 
-import java.util.Arrays;
-
-import com.classes.Character;
+import com.classes.Auto;
+import com.classes.AutoReifenSatz;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Character z = new Character();
+	public static void main(String[] args) throws CloneNotSupportedException{
 		
-		char[] cArray = z.eingabe().toCharArray();
+		AutoReifenSatz r = new AutoReifenSatz("SommerReifen", 4);
+		Auto a = new Auto("VW", r);
 		
 
-		if(cArray.length > 3 || cArray.length < 3)
-			throw new Error("Error: Geben Sie nur 3 Zeichen ein!");
+		Auto aKopie = a.clone();
+		aKopie.setAutoTyp("BMW");
 		
-		char a = (char) Math.min(cArray[0], cArray[1]);
-		char e = (char) Math.max(cArray[0], cArray[1]);
-		char g_char = cArray[2];
+		aKopie.getReifen().setTyp("WinterReifen");
 		
-		if(g_char < a|| g_char > e)
-			throw new Error("Error: Das dritte Element soll in zwischen den ersten und zweiten sein!");
-		else if((e - a) == 1)
-			throw new Error("Error: Der Bereich ist leer!");
-		
-		int c_value = z.zeichen(cArray);
+		System.out.println(a.toString());
+		System.out.println(aKopie.toString());
+		System.out.println(a.toString());
+
 
 	}
 }
