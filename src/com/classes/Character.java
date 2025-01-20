@@ -26,7 +26,7 @@ public class Character {
 	}
 
 	public void main(String[] args) {
-		
+
 		char[] cArray = eingabe().toCharArray();
 
 		if (cArray.length > 3 || cArray.length < 3)

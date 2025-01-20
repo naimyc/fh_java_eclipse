@@ -3,18 +3,16 @@ package com.classes;
 import java.util.Iterator;
 import java.util.Random;
 
-
 public class MaxValueArray {
 	int[] iArr = new int[10];
-	//Random r = new Random();
+	// Random r = new Random();
 
-	void random()
-	{
+	void random() {
 		int r = (int) (Math.random() * 61 - 5) + 5;
 	}
-	
+
 	public void setRandomValues() {
-		
+
 		for (int i = 0; i < iArr.length; i++) {
 			iArr[i] = (int) (Math.random() * 100);
 

@@ -1,25 +1,26 @@
 package com.main;
 
-import com.classes.Auto;
-import com.classes.AutoReifenSatz;
+
+import java.util.Random;
 
 public class Main {
+	static String username;
 
-	public static void main(String[] args) throws CloneNotSupportedException{
+	public static void main(String[] args) throws CloneNotSupportedException {
 		
-		AutoReifenSatz r = new AutoReifenSatz("SommerReifen", 4);
-		Auto a = new Auto("VW", r);
+		try {
+			System.out.println(username);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		Random r = new Random();
 		
-
-		Auto aKopie = a.clone();
-		aKopie.setAutoTyp("BMW");
-		
-		aKopie.getReifen().setTyp("WinterReifen");
-		
-		System.out.println(a.toString());
-		System.out.println(aKopie.toString());
-		System.out.println(a.toString());
-
+//		pablo 
+//		
+//		pablo 
+//		
+//		System.out.println();
 
 	}
 }
