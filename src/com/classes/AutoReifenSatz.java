@@ -8,10 +8,9 @@ public class AutoReifenSatz implements Cloneable {
 		this.typ = typ;
 		this.anzahl = anzahl;
 	}
-	
+
 	@Override
-	public AutoReifenSatz clone() throws CloneNotSupportedException
-	{
+	public AutoReifenSatz clone() throws CloneNotSupportedException {
 		return (AutoReifenSatz) super.clone();
 	}
 

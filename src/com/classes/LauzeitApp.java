@@ -19,7 +19,7 @@ class LaufZeitApp {
 
 			ersteEingabe = JOptionPane.showInputDialog("Gib die Startzeit des Läufers ein:");
 			zweiteEingabe = JOptionPane.showInputDialog("Gib die Ankunftzeit ein:");
-			
+
 			start = new Uhrzeit(ersteEingabe);
 			ankunft = new Uhrzeit(zweiteEingabe);
 
@@ -27,7 +27,7 @@ class LaufZeitApp {
 			l[i] = new Laeufer(start, ankunft);
 			// Berechnung Laufdauer
 			i++;
-			
+
 		}
 
 		for (Laeufer el : l) {

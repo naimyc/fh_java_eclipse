@@ -9,13 +9,12 @@ public class Auto implements Cloneable {
 		this.autoTyp = autoTyp;
 		this.reifen = reifen;
 	}
-	
+
 	@Override
-	public Auto clone() throws CloneNotSupportedException
-	{
+	public Auto clone() throws CloneNotSupportedException {
 		Auto a = (Auto) super.clone();
 		a.reifen = reifen.clone();
-		
+
 		return a;
 	}
 
@@ -37,6 +36,6 @@ public class Auto implements Cloneable {
 
 	@Override
 	public String toString() {
-		return "Autotyp: " + autoTyp + "\tReifen: " + reifen.getTyp()+ ", "+ reifen.getAnzahl();
+		return "Autotyp: " + autoTyp + "\tReifen: " + reifen.getTyp() + ", " + reifen.getAnzahl();
 	}
 }
