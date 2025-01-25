@@ -6,10 +6,10 @@ public class Interfaces {
 	}
 
 	public interface Zinsen {
-		public final double ZINS1 = 0.3;
-		public final double ZINS2 = 0.4;
+		double ZINS1 = 0.3;
+		double ZINS2 = 0.4;
 
-		public void addZins(int dauer);
+		void addZins(int dauer);
 
 	}
 }

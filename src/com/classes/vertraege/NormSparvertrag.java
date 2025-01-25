@@ -3,6 +3,7 @@ package com.classes.vertraege;
 import com.intefaces.Interfaces.Zinsen;
 
 public class NormSparvertrag extends Sparvertrag implements Zinsen {
+
 	private double guthaben;
 	private int U = 3;
 	private final int W = 5;
@@ -19,6 +20,7 @@ public class NormSparvertrag extends Sparvertrag implements Zinsen {
 	public void setGuthaben(double guthaben) {
 		this.guthaben = guthaben;
 	}
+
 	public void addZins(int dauer) {
 		double zins = -1;
 
@@ -30,7 +32,7 @@ public class NormSparvertrag extends Sparvertrag implements Zinsen {
 		if (U == 0)
 			U = 3;
 
-		guthaben = guthaben * (1 + zins / 100);
+		guthaben += (zins / 100 * guthaben) * dauer;
 	}
 
 }
