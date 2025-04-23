@@ -10,7 +10,7 @@ public class Haeuser {
 	 */
 	public Haeuser(String strasse) {
 		this.strasse = strasse;
-		haeuserDerStrasse = new Haus[1];
+		haeuserDerStrasse = new Haus[100];
 		
 	}
 	public Haus[] getHaeuserDerStrasse() {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zitateSammlung>
+    <person>
+        <name>Albert Einstein</name>
+        <beschreibung>Theoretischer Physiker</beschreibung>
+        <zitat>Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt.</zitat>
+        <zitat>Das Schönste, was wir erleben können, ist das Geheimnisvolle.</zitat>
+    </person>
+    <person>
+        <name>Marie Curie</name>
+        <beschreibung>Physikerin und Chemikerin</beschreibung>
+        <zitat>Nichts im Leben ist zu fürchten, es ist nur zu verstehen.</zitat>
+    </person>
+    <person>
+        <name>Konfuzius</name>
+        <beschreibung>Chinesischer Philosoph</beschreibung>
+        <zitat>Der Weg ist das Ziel.</zitat>
+        <zitat>Es ist besser, ein einziges kleines Licht anzuzünden, als die Dunkelheit zu verfluchen.</zitat>
+    </person>
+</zitateSammlung>
