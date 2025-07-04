@@ -1,22 +1,22 @@
 package com.main;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Main {
 	static String username;
 
 	public static void main(String[] args) {
-		ArrayList<ArrayList<Integer>> mTable = new ArrayList<ArrayList<Integer>>();
-
-		for (int i = 1; i < 11; i++) {
-			for (int j = 1; j < 11; j++) {
-				mTable.add(null);
-			}
-
-		}
+		Deque<String> strLst = new LinkedList<String>();
 		
-//			System.out.println(mTable.getLast());
-
+		for (int i = 0; i < 5; i++) {
+			
+			strLst.addLast(""+i);
+		}
+		for (int i = 0; i < strLst.size(); i++) {
+			String s =strLst.getFirst();
+			System.out.println(s);
+		}
 	}
 }
